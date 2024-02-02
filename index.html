@@ -1,0 +1,50 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Decodificador - OracleOne Challenge</title>
+        <link rel="icon" type="image/png" href="src/assets/alura_logo_icon.png">
+        <link rel="stylesheet" href="./src/styles/styles.css">
+    </head>
+
+    <body>
+
+        <header class="cabecalho">
+            <img src="./src/assets/alura_logo.svg" alt="Imagem Test">
+        </header>
+
+        <main class="conteudo">
+            <section class="conteudo_texto">
+                <textarea class="conteudo_texto_digitacao" id="textarea_para_acao" placeholder="Escreva seu texto aqui"></textarea>
+                <div class="conteudo_alerta">
+                    <img id="id_icone_alerta" src="./src/assets/alerta.svg" alt="Apenas letras minúsculas e sem acento">
+                    <small id="texto_alerta">Apenas letras minúsculas e sem acento.</small>
+                </div>
+                <div class="conteudo_texto_botoes">
+                    <button id="botao_criptografar">Criptografar</button>
+                    <button id="botao_descriptografar">Descriptografar</button>
+                </div>
+            </section>
+            <section class="conteudo_resultado">
+                <aside class="conteudo_resultado_orientacoes">
+                    <div class="conteudo_resultado_itens" id="div_imagem_resultado">
+                        <img src="./src/assets/imagem_mulher.svg" alt="Lupa">
+                        <h2>Nenhuma mensagem encontrada</h2>
+                        <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    </div>
+                    <div class="not_visible" id="div_textarea_resultado">
+                        <textarea class="not_visible" id="textarea_resultado"></textarea>
+                        <button class="not_visible" id="botao_copiar">Copiar</button>
+                    </div>
+                </aside>
+            </section>
+        </main>
+
+        <footer class="rodape">
+            <p>Developed by <a href="https://github.com/MatheusLOliveira">Matheus Oliveira</a></p>
+        </footer>
+        <script src="./src/scripts/app.js"></script>
+    </body>
+    </html>
